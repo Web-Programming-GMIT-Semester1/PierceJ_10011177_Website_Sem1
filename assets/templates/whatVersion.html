@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <![endif]-->
+  <title class="title">Linux Distro</title>
+  <!--REQUIRED STYLE SHEETS-->
+  <!-- BOOTSTRAP CORE STYLE CSS -->
+  <link href="../css/bootstrap.css" rel="stylesheet" />
+  <!-- FONTAWESOME STYLE CSS -->
+  <link href="../css/font-awesome.css" rel="stylesheet" />
+  <!-- VEGAS STYLE CSS -->
+  <link href="../scripts/vegas/jquery.vegas.min.css" rel="stylesheet" />
+  <!-- CUSTOM STYLE CSS -->
+  <link href="../css/style.css" rel="stylesheet" />
+  <!-- GOOGLE FONT -->
+  <link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css' />
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../default.html">piercej </a>
+      </div>
+      <!-- Collect the nav links for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">Home</a>
+          </li>
+          <li><a href="#linux"><u>Linux</u></a>
+          </li>
+
+          <li class="links"><a href="#price-sec">Tutorials</a>
+            <ul class="links">
+              <li class="links"><a href="#linux">Linux Distro</a></li>
+              <li class="links"><a href="../templates/quitSmoking.html">Quit Smoking</a></li>
+              <li class="links"><a href="../templates/ubuntuInstall.html">Ubuntu</a></li>
+              <li class="links"><a href="../templates/goalkeeping.html">Goalkeeping</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#contact-sec">Contact</a>
+          </li>
+          <li><a href="#"><strong>e-mail:</strong>  piercejordan50@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!--End Navigation -->
+
+  <!--Header section  -->
+  <div class="container" id="home">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h1 class="head-main">Linux Desktop</h1>
+        <h2 class="head-sub-main">Freedom. Choices. Beautiful.</h2>
+        <a class="btn btn-danger btn-lg " href="#linux">Read More </a><a class="btn btn-default btn-lg" href="#contact-sec">Leave Here </a>
+        <div class="head-last"></div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <!--Header section  -->
+  <section class="for-full-back color-white " id="header-sec">
+    <div class="container" id="linux">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="head-main-linux">Linux Specification Generator</h1>
+          <h3 class="head-sub-main-linux">Fill out your laptop/PC specifications below</h3>
+          <h4 class="head-sub-main-linux">Find out which Linux distrubution fits <strong class="red">YOUR</strong> needs</h4>
+          <!--div class="head-last"--><!--/div-->
+        </div>
+
+        <!-- This is the RAM option selector-->
+
+        <form class="form-horizontal form-inline">
+          <div class="col-md-3">
+            <ul class="plan-option">
+              <li class="plan-head">RAM</li>
+              <li>
+                <div class="checkbox">
+                  <label><input class="ram" type="radio" name="ram" value="256" checked="checked" onclick="ramChange(this)">256MB-512MB</label>
+                </div>
+            </li>
+            <li>
+              <div class="checkbox">
+                <label><input class="ram" type="radio" name="ram" value="512" onclick="ramChange(this)">512MB-1GB</label>
+              </div>
+          </li>
+          <li>
+            <div class="checkbox">
+              <label><input class="ram" type="radio" name="ram" value="1" onclick="ramChange(this)">1GB-2GB</label>
+            </div>
+        </li>
+        <li>
+          <div class="checkbox">
+            <label><input class="ram" type="radio" name="ram" value="2" onclick="ramChange(this)">2GB+</label>
+          </div>
+      </li>
+      <li id="selectionRAM" class="main-option">RAM = 256MB-512MB</li>
+    </ul>
+  </div>
+</form>
+
+<!-- This is the ARCH option selector-->
+<form class="form-horizontal form-inline">
+  <div class="col-md-3">
+    <ul class="plan-option">
+      <li class="plan-head">Architecture</li>
+      <li>
+        <div class="checkbox">
+          <label><input type="radio" name="Arch" value="32" checked="checked" onclick="archChange(this)">32bit</label>
+        </div>
+    </li>
+    <li>
+      <div class="checkbox">
+        <label><input type="radio" name="Arch" value="64" onclick="archChange(this)">64bit</label>
+      </div>
+  </li>
+  <li id="selectionArch" class="main-option">Architecture = 32-Bit</li>
+</ul>
+</div>
+</form>
+
+<!-- This is the Internet option selector-->
+<form class="form-horizontal form-inline">
+  <div class="col-md-3">
+    <ul class="plan-option">
+      <li class="plan-head">Internet</li>
+      <li>
+        <div class="checkbox">
+          <label><input type="radio" name="net" value="Yes" checked="checked" onclick="netChange(this)">Connected</label>
+        </div>
+    </li>
+    <li>
+      <div class="checkbox">
+        <label><input type="radio" name="net" value="No" onclick="netChange(this)">Disconnected</label>
+      </div>
+  </li>
+  <li id="selectionNet" class="main-option">Internet = Connected</li>
+</ul>
+</div>
+</form>
+<!-- This is the HDD option selector-->
+<form class="form-horizontal form-inline">
+  <div class="col-md-3">
+    <ul class="plan-option">
+      <li class="plan-head">HDD Size</li>
+      <li>
+        <div class="checkbox">
+          <label><input type="radio" name="hdd" value="5" onclick="hddChange(this)">5GB or Less</label>
+        </div>
+    </li>
+    <li>
+      <div class="checkbox">
+        <label><input type="radio" name="HDD" value="8" onclick="hddChange(this)">5GB-8GB</label>
+      </div>
+  </li>
+  <li>
+    <div class="checkbox">
+      <label><input type="radio" name="HDD" value="10" onclick="hddChange(this)">8GB-10GB</label>
+    </div>
+</li>
+<li>
+  <div class="checkbox">
+    <label><input type="radio" name="HDD" value="20" checked="checked" onclick="hddChange(this)">10GB+</label>
+  </div>
+</li>
+<li id="selectionHDD" class="main-option">HDD Size = 10GB+</li>
+</ul>
+</div>
+<button type="button" class="btn btn-danger btn-8" onclick="details()">Submit Details</button>
+</form><br>
+
+
+<form class="form-horizontal form-inline">
+  <div>
+    <a href="https://www.linuxmint.com/"><img id="mint" class="linux" alt="Linux Mint" src="../img/mint.png" height="300" width="375" hidden></a>
+  </div>
+  <div>
+    <a href="http://peppermintos.com/"><img id="ppmint" class="linux" alt="Linux Peppermint" src="../img/ppmint.png" height="300" width="375" hidden></a>
+  </div>
+  <div>
+    <a href="https://getfedora.org/en/workstation/"><img id="fedora" class="linux" alt="Linux Fedora" src="../img/fedora-linux.png" height="300" width="375" hidden></a>
+  </div>
+  <div>
+    <a href="http://www.ubuntu.com/desktop"><img id="ubuntu" class="linux" alt="Linux Ubuntu" src="../img/ubuntu-logo.jpg" height="300" width="375" hidden></a>
+  </div>
+</form>
+</div>
+</div>
+</section>
+<section class="for-full-back " id="Parallax-one">
+  <div class="container">
+
+    <div class="row text-center for-parallax-one">
+      <div class="col-md-6 ">
+        <h3></h3>
+        <h4>
+          <strong>
+          </strong>
+        </h4>
+      </div>
+      <div class="col-md-6 ">
+        <h3></h3>
+        <h4>
+          <strong>
+          </strong>
+        </h4>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<!--./parallax one-->
+<!--End Header section  -->
+
+<!-- Tutorial Section -->
+
+<section class="for-full-back color-white " id="price-sec">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>FOUR LITTLE TUTORIALS</h1>
+        <h4>
+          <strong>See below a few sample tutorials I put together. Including the classic hurling goalkeeping</strong>
+        </h4>
+      </div>
+
+    </div>
+    <div class="row text-center">
+
+      <div class="col-md-12 ">
+
+
+
+        <div class="col-md-3">
+          <ul class="plan">
+            <li class="plan-head">TUTORIAL ONE</li>
+            <li class="main-price">Linux Distro</li>
+            <li>How To <strong>Decide?</strong></li>
+            <li class="bottom">
+              <a href="#linux" class="btn btn-default">Go To Tutorial</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="plan">
+            <li class="plan-head">TUTORIAL TWO</li>
+            <li class="main-price">Ubuntu Install</li>
+            <li>How To <strong>Install Ubuntu</strong></li>
+            <li class="bottom">
+              <a href="../templates/ubuntuInstall.html" class="btn btn-default">Go To Tutorial</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="plan">
+            <li class="plan-head">TUTORIAL THREE</li>
+            <li class="main-price">Quit Smoking</li>
+            <li>How To <strong>Quit - Tips</strong></li>
+            <li class="bottom">
+              <a href="../templates/quitSmoking.html" class="btn btn-default">Go To Tutorial</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="plan">
+            <li class="plan-head">TUTORIAL FOUR</li>
+            <li class="main-price">Goalkeeping</li>
+            <li>How To <strong>Be A Stopper</strong></li>
+            <li class="bottom">
+              <a href="../templates/goalkeeping.html" class="btn btn-default">Go To Tutorial</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<section class="for-full-back for-parallax-two" id="Parallax-two">
+  <div class="container">
+
+    <div class="row text-center">
+      <div class="col-md-8 col-md-offset-2 ">
+        <h1></h1>
+        <h4>
+          <strong>
+          </strong>
+        </h4>
+      </div>
+
+    </div>
+
+
+  </div>
+</section>
+<!--./parallax two-->
+<!--End Pricing Section -->
+
+<!-- Contact Section -->
+<section class="for-full-back color-white " id="contact-sec">
+  <div class="container">
+
+
+    <div class="row">
+      <div class="col-md-5 contact-cls">
+        <h3>CONTACT ME </h3>
+        <div>
+          <span><i class="fa fa-home"></i>&nbsp; Address: Galway</span>
+          <br />
+          <span><i class="fa fa-phone"></i>&nbsp;Phone: +353 87 778 5533</span>
+          <br />
+          <span><i class="fa fa-envelope-o"></i>&nbsp;E-Mail: piercejordan50@gmail.com</span>
+          <br />
+          <span><i class="fa fa-phone"></i>&nbsp;Call: +353 91 849250</span>
+          <br />
+          <span><i class="fa fa-globe"></i>&nbsp;Web: www.piercej.com</span>
+          <br />
+        </div>
+        <br />
+        <div id="social-icon">
+          <a href="https://www.facebook.com/piercejord"><i class="fa fa-facebook fa-2x"></i></a>
+          <a href="https://ie.linkedin.com/in/pierce-jordan-55b83242"><i class="fa fa-linkedin fa-2x"></i></a>
+          <a href="https://plus.google.com/u/0/105194030540292764423"><i class="fa fa-google-plus fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h2>Feel free to send me a message</h2>
+        <p>
+          If you would like to get in touch "the easy way" feel free to leave me a message below. <br>(Requires e-mail client, e.g. Thunderbird)
+        </p>
+        <form action="mailto:piercejordan50@gmail.com" method="post" enctype="text/plain">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <div class="form-group">
+                <input id="name" type="text" class="form-control" required="required" placeholder="Name" onkeyup="inputName()">
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="form-group">
+                <input id="email" type="email" class="form-control" required="required" placeholder="Email address" onkeyup="inputEmail()">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <div class="form-group">
+                <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Message" onkeyup="inputMessage()"></textarea>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-default" value="submit">Submit Request</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--End Contact Section -->
+<!--footer Section -->
+<div class="for-full-back " id="footer">
+  2016 www.piercej.com
+
+</div>
+<!--End footer Section -->
+<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+<!-- CORE JQUERY  -->
+<script src="../plugins/jquery-1.10.2.js"></script>
+<!-- BOOTSTRAP CORE SCRIPT   -->
+<script src="../plugins/bootstrap.js"></script>
+<!-- VEGAS SLIDESHOW SCRIPTS -->
+<script src="../plugins/vegas/jquery.vegas.min.js"></script>
+<script src="../plugins/jquery.parallax-1.1.3.js"></script>
+<!-- CUSTOM SCRIPTS -->
+<script src="../js/myJS.js"></script>
+
+</body>
+</html>
